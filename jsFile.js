@@ -1,5 +1,3 @@
-var a = document.getElementById("a");
-var b = document.getElementById("b").value;
 var output = document.getElementById("outPut");
 
 function getRadioSelection(name) {
@@ -16,15 +14,17 @@ function getRadioSelection(name) {
 function calc() {
     alert(getRadioSelection("action"));
 
+    var a = document.getElementById("a").value;
+    var b = document.getElementById("b").value;
+
     if (getRadioSelection("action") === "add") {
-        alert(a.valueOf);
-        alert(b);
+        alert((parseInt(a, 2) + parseInt(b, 2)).toString(2));
     } else if (getRadioSelection("action") === "subtract") {
-        alert("kjk");
+        alert((parseInt(a, 2) - parseInt(b, 2)).toString(2));
     } else if (getRadioSelection("action") === "divide") {
-        alert("kjfdkfjk");
+        alert((parseInt(a, 2) / parseInt(b, 2)).toString(2));
     } else if (getRadioSelection("action") === "multiply") {
-        alert("kjfdkfjk");
+        alert((parseInt(a, 2) * parseInt(b, 2)).toString(2));
     }
 
 }
