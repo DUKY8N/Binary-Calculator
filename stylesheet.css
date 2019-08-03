@@ -3,6 +3,14 @@ h1 {
     margin-bottom: 30px;;
 }
 
-main {
-    margin: 0px 40px;
+body {
+    background-color: darkcyan;
+}
+
+.box {
+    background-color:darkseagreen;
+    width: 600px;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 15px;
 }

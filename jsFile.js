@@ -38,7 +38,7 @@ function calc() {
         }
     } else {
         output.innerHTML = "숫자가 아닙니다";
-        return;
+        return null;
     }
 
 }
